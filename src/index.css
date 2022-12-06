@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-family: 'Luckiest Guy';
+  font-weight: 500;
+  color: #eee;
+  font-size: 1.2rem;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+button {
+  position: fixed;
+  left: 0.5rem;
+  top: 2rem;
+  width: 120px;
+  transform: translateY(-50%);
+  width: 90px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 540px) {
+  button {
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+  }
+}
